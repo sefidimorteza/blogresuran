@@ -1,4 +1,10 @@
 <template>
+    <Html>
+    <Head>
+        <Title>top 50 Restaurant</Title>
+    </Head>
+    </Html>
+
     <div>
         <div class="container">
             <RestaurantTabel />

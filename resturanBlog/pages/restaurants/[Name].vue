@@ -2,7 +2,7 @@
   <div>
     <div class="restaurant-container">
       <div class="image-container">
-        <img :src="restaurant.imageUrl" alt=""/>
+        <img :src="restaurant.imageUrl" alt="" />
       </div>
       <div class="info-container">
         <h1>{{ restaurant.name }}</h1>
@@ -26,7 +26,12 @@ import restaurants from "../../data.json";
 const route = useRouter()
 const nameRoute = route.currentRoute.value.params.Name;
 
-const restaurant = restaurants.find((r)=>r.name===nameRoute)
+const restaurant = restaurants.find((r) => r.name === nameRoute)
+
+useHead({
+  title: restaurant ? nameRoute : '404 - pageNotFound',
+ 
+})
 
 </script>
 

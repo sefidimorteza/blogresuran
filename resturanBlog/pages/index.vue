@@ -1,5 +1,10 @@
 
 <template>
+  <Html>
+    <Head>
+      <Title>Restaurantly</Title>
+    </Head>
+  </Html>
     <div>
       <div class="container">
         <h1>Welcome to Restaurantly</h1>
